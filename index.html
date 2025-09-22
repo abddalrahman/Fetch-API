@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FETCH API</title>
+	<!-- icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+	<!-- fonts cdn -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+	integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- my css -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+	<div class="main-content">
+		<div class="my-container py-5">
+			
+			<div class="controle row">
+				<div class="col-12 col-lg-4">
+					<div class="search-cont d-flex align-items-center py-2 px-3 rounded-2">
+						<input class="border-0" type="text" placeholder="Search by article title">
+						<span class="material-symbols-outlined search-btn">search</span>
+					</div>
+				</div>
+				<div class="col-12 col-lg-8 justify-content-between d-flex mt-4 mt-lg-0 flex-wrap flex-lg-nowrap">
+					<select class=" mx-lg-4 border-0 rounded-2 py-2 px-3 article-in-page">
+						<option value="12" selected>12 articles in page</option>
+						<option value="24">24 articles in page</option>
+						<option value="36">36 articles in page</option>
+					</select>
+					<select class="border-0 rounded-2 py-2 px-3 article-order">
+						<option value="d" selected>Default Sort</option>
+						<option value="asc">Ascending (titles)</option>
+						<option value="desc">Descending (titles)</option>	
+					</select>
+				</div>
+			</div>
+
+			<div class="pages d-flex align-items-center mt-4">
+				<span class="d-flex align-items-center justify-content-center rounded-2 prev stop">
+					<span class="material-symbols-outlined ">arrow_left</span>
+				</span>
+				
+				<span class="num-of-num mx-3 d-inline-block"> num of num</span>
+				
+				<span class="d-flex align-items-center justify-content-center rounded-2 next ">
+					<span class="material-symbols-outlined">arrow_right</span>
+				</span>
+			</div>
+
+			<div class="articles row py-4">
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+<script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+
+</html>

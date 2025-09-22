@@ -1,0 +1,179 @@
+:root{
+	--bac-color: #86bddb;
+	--sec-bac-color: #e2f0fa;
+	--main-text-color: #333333;
+	--titles-color: #1E3A8A;
+	--btns-color: #3B82F6;
+	--like-color: #10B981;
+	--dislike-color: #F97316;
+	--gray-color: #407078;
+	--light-gray-color: #b4d9eb;
+	--light-color: #FFF;
+}
+*{
+	box-sizing: border-box;
+	margin: 0px ;
+}
+body {
+	font-family: "Inter", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.my-container {
+	width: 88%;
+	min-width: 340px;
+	margin-inline: auto;
+}
+.main-content{
+	background-color: var(--bac-color);
+	min-height: 100vh;
+}
+
+/* global css */
+@media screen and (max-width:576px) {
+	.row{
+		margin-inline: 0px;
+	}
+	.pages{
+		padding-inline: 12px;
+	}
+}
+/*controle sec------  */
+.search-cont,
+.controle > div:last-of-type select{
+	color: var(--gray-color);
+	background-color: var(--light-gray-color);
+}
+.search-cont .search-btn{
+	cursor: pointer;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+.search-cont .search-btn:hover{
+	color: var(--light-color);
+}
+.search-cont input{
+	background-color: transparent;
+	color: var(--gray-color);
+	outline: none;
+}
+.controle > div:last-of-type select{
+	width: calc(50% - 20px);
+	cursor: pointer;
+}
+/*articles sec------  */
+.articles .article > a{
+	background-color: var(--sec-bac-color);
+	height: 260px;
+  display: flex !important;
+  flex-direction: column;
+}
+.articles .article > a h4{
+	font-size: 20px;
+	font-weight: 600;
+	color: var(--titles-color);
+}
+.articles .article > a p{
+	color: var(--main-text-color);
+  font-size: 16px;
+  height: 100px;
+  overflow: hidden;
+}
+.articles .article > a > div span{
+	font-size: 12px;
+	color: var(--main-text-color);
+}
+.articles .article > a > .activity span:first-of-type{
+	font-size: 16px;
+	color: var(--like-color);
+}
+.articles .article > a > .activity div:last-of-type span:first-of-type{
+	color: var(--dislike-color);
+}
+.articles .article > a > span{
+	color: var(--main-text-color);
+	font-size: 14px;
+}
+
+/* pages sec----------------- */
+.pages >span:first-of-type,
+.pages >span:last-of-type{
+	width: 40px;
+	height: 40px;
+	background-color: var(--titles-color);
+	color: var(--light-color);
+	font-size: 20px;
+	cursor: pointer;
+	transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+.pages >span:first-of-type.stop,
+.pages >span:last-of-type.stop{
+	cursor: auto;
+	background-color: var(--gray-color);
+	color: var(--light-gray-color);
+}
+.pages >span:first-of-type:hover,
+.pages >span:last-of-type:hover{
+	color: var(--light-gray-color);
+}
+
+@media screen and (max-width: 575px) {
+	.controle > div:last-of-type select{
+		width: 100%;
+	}
+	.controle > div:last-of-type select:last-of-type{
+		margin-top: 16px;
+	}
+}
+
+
+/* article page ------------------------------------------------ */
+main.main-section{
+	background-color: var(--bac-color);
+	min-height: 100vh;
+}
+.article-details{
+	max-width: 1000px;
+	min-height: 500px;
+	background-color: var(--light-color);
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+}
+.article-details span.art-id{
+	font-size: 14px ;
+	color: var(--gray-color);
+}
+.article-details h1{
+	font-size: 42px;
+	color: var(--titles-color);
+	font-weight: 600;
+}
+.article-details span.auther-name{
+	color: var(--gray-color);
+}
+.article-details span.auther-name a{
+	color: var(--titles-color);
+}
+.article-details .all-tags a{
+	background-color: var(--light-gray-color);
+	color: var(--titles-color);
+}
+.article-details p{
+	font-size: 20px;
+	color: var(--main-text-color);
+	font-weight: 500;
+}
