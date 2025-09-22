@@ -63,6 +63,7 @@ ul{
 	background-color: transparent;
 	color: var(--gray-color);
 	outline: none;
+	flex: auto;
 }
 .controle > div:last-of-type select{
 	width: calc(50% - 20px);
